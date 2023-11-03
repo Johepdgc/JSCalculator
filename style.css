@@ -1,0 +1,43 @@
+/* calculator body css */
+.calculadora {
+  width: 300px;
+  border: 1px solid #ccc;
+  border-radius: 20px;
+  background-color: rgb(39, 39, 48);
+  padding: 25px;
+  box-shadow: 0 2px 5px rgba(red, green, blue, alpha);
+}
+
+/* display css */
+.pantalla {
+  height: 60px;
+  font-size: 24px;
+  text-align: right;
+  padding: 5px;
+  background-color: rgb(200, 255, 216);
+  border: 1px solid #ccc;
+  border-radius: 5px;
+  margin-bottom: 10px;
+  overflow: auto;
+}
+
+/* buttons css */
+.botones {
+  display: grid;
+  grid-template-columns: repeat(4, 3fr);
+  gap: 10px;
+}
+
+button {
+  height: 80px;
+  width: 70px;
+  font-size: 25px;
+  border: none;
+  border-radius: 10px;
+  cursor: pointer;
+  background-color: rgb(200, 209, 222);
+}
+
+button:hover {
+  background-color: rgb(144, 213, 211);
+}
