@@ -8,6 +8,7 @@ function mostrarEnPantalla(value) {
     pantallaActual = value;
   } else {
     // si no, concatenar/agregar el nuevo valor a la pantalla actual
+    pantallaActual += value;
   }
 
   // reiniciar el contenido a falso cuando el ususario ingrese un nuevo valor
@@ -19,7 +20,7 @@ function mostrarEnPantalla(value) {
 
 // function to update the content display with current content
 function pantallaActualizada() {
-  const mostarElemento = document.getElementById("pantalla");
+  const mostrarElemento = document.getElementById("pantalla");
   mostrarElemento.textContent = pantallaActual;
 }
 
@@ -30,7 +31,7 @@ function calcularResultado() {
     const resultado = eval(pantallaActual);
 
     // agregamos el resultado a la pantalla actual luego de un signo igual (=)
-    pantallaActual += "\n=" + resultado.toString();
+    pantallaActual += "\n" + resultado.toString();
 
     // actuliza la pantalla a el resultado actual
     pantallaActualizada();
@@ -68,3 +69,9 @@ function limpiarPantalla() {
   // actualiza la pantalla de la calculadora
   pantallaActualizada();
 }
+
+// agregar a la ventana handleOverflow para redimensionar evento
+window.addEventListener("resize", handleOverflow);
+
+// llamar el handleOverflow inicialmente para manejar cualquier revasar en una carga de pagina
+handleOverflow();

@@ -1,3 +1,11 @@
+body {
+  margin: 0;
+  padding: 0;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  background-color: #cdcdcd;
+}
 /* calculator body css */
 .calculadora {
   width: 300px;
@@ -16,7 +24,7 @@
   padding: 5px;
   background-color: rgb(200, 255, 216);
   border: 1px solid #ccc;
-  border-radius: 5px;
+  border-radius: 20px;
   margin-bottom: 10px;
   overflow: auto;
 }
@@ -25,7 +33,7 @@
 .botones {
   display: grid;
   grid-template-columns: repeat(4, 3fr);
-  gap: 10px;
+  gap: 5px;
 }
 
 button {
@@ -33,7 +41,7 @@ button {
   width: 70px;
   font-size: 25px;
   border: none;
-  border-radius: 10px;
+  border-radius: 20px;
   cursor: pointer;
   background-color: rgb(200, 209, 222);
 }

@@ -6,7 +6,7 @@
     <title>Calculadora JavaScript</title>
 
     <link rel="stylesheet" href="style.css">
-    <link rel="stylesheet" href="script.js">
+    <script src="script.js"></script>
 </head>
 <body>
     <!-- Calculator container -->
@@ -15,26 +15,26 @@
         <div class="pantalla" id="pantalla">0</div>
         <!-- Buttons -->
         <div class="botones">
-            <button>(</button>
-            <button>)</button>
-            <button>CE</button>
-            <button>C</button>
-            <button>7</button>
-            <button>8</button>
-            <button>9</button>
-            <button>/</button>
-            <button>4</button>
-            <button>5</button>
-            <button>6</button>
-            <button>*</button>
-            <button>1</button>
-            <button>2</button>
-            <button>3</button>
-            <button>-</button>
-            <button>0</button>
-            <button>.</button>
-            <button>=</button>
-            <button>+</button>
+            <button onclick="mostrarEnPantalla('(')">(</button>
+            <button onclick="mostrarEnPantalla(')')">)</button>
+            <button onclick="borrarUltimoValor()">CE</button>
+            <button onclick="limpiarPantalla()">C</button>
+            <button onclick="mostrarEnPantalla('7')">7</button>
+            <button onclick="mostrarEnPantalla('8')">8</button>
+            <button onclick="mostrarEnPantalla('9')">9</button>
+            <button onclick="mostrarEnPantalla('/')">/</button>
+            <button onclick="mostrarEnPantalla('4')">4</button>
+            <button onclick="mostrarEnPantalla('5')">5</button>
+            <button onclick="mostrarEnPantalla('6')">6</button>
+            <button onclick="mostrarEnPantalla('*')">*</button>
+            <button onclick="mostrarEnPantalla('1')">1</button>
+            <button onclick="mostrarEnPantalla('2')">2</button>
+            <button onclick="mostrarEnPantalla('3')">3</button>
+            <button onclick="mostrarEnPantalla('-')"n>-</button>
+            <button onclick="mostrarEnPantalla('0')">0</button>
+            <button onclick="mostrarEnPantalla('.')">.</button>
+            <button onclick="calcularResultado()">=</button>
+            <button onclick="mostrarEnPantalla('+')">+</button>
         </div>
     </div>
 </body>
